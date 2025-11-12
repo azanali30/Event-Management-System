@@ -1,0 +1,32 @@
+# Security files
+.env
+config/database.php
+config/email_config.php
+
+# Log files
+logs/*.log
+*.log
+
+# Temporary files
+tmp/
+temp/
+cache/
+
+# Upload files (optional)
+uploads/
+qr_codes/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.sql

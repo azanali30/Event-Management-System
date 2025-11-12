@@ -1,0 +1,110 @@
+/* Image Placeholders for Event Pictures */
+
+.event-image-placeholder {
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-image-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(25, 32, 201, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(17, 125, 250, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 60%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.event-image-placeholder .placeholder-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.event-image-placeholder .placeholder-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+.event-image-placeholder .placeholder-text {
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
+
+/* Specific event type placeholders */
+.sports-placeholder {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    color: #166534;
+}
+
+.sports-placeholder::before {
+    background-image: 
+        radial-gradient(circle at 30% 30%, rgba(16, 185, 129, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba(5, 150, 105, 0.15) 0%, transparent 50%);
+}
+
+.cultural-placeholder {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #92400e;
+}
+
+.cultural-placeholder::before {
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(245, 158, 11, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(217, 119, 6, 0.15) 0%, transparent 50%);
+}
+
+.technical-placeholder {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    color: #1e40af;
+}
+
+.technical-placeholder::before {
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.15) 0%, transparent 50%);
+}
+
+.workshop-placeholder {
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+    color: #7c3aed;
+}
+
+.workshop-placeholder::before {
+    background-image: 
+        radial-gradient(circle at 40% 20%, rgba(139, 92, 246, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 60% 80%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);
+}
+
+.competition-placeholder {
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    color: #dc2626;
+}
+
+.competition-placeholder::before {
+    background-image: 
+        radial-gradient(circle at 30% 70%, rgba(239, 68, 68, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 70% 30%, rgba(220, 38, 38, 0.15) 0%, transparent 50%);
+}
+
+.seminar-placeholder {
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    color: #065f46;
+}
+
+.seminar-placeholder::before {
+    background-image: 
+        radial-gradient(circle at 50% 20%, rgba(6, 182, 212, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(8, 145, 178, 0.15) 0%, transparent 50%);
+}

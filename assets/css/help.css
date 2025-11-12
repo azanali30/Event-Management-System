@@ -1,0 +1,64 @@
+/* Help Styles */
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.8) 0%, rgba(2, 132, 199, 0.8) 100%), 
+                url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 4rem 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.help-section {
+    padding: 4rem 0;
+}
+
+.help-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.help-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.1);
+    transform: translateY(-2px);
+}
+
+.help-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.help-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.help-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.help-card .btn {
+    margin-top: auto;
+}

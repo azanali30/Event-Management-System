@@ -1,0 +1,19 @@
+This is a placeholder for your college events video.
+
+To add a video background:
+1. Replace this file with a video named "college-events.mp4"
+2. The video should be in MP4 format
+3. Recommended resolution: 1920x1080 or higher
+4. Keep file size under 10MB for web performance
+
+The system will automatically detect and use your video file.
+If no video is found, it will fall back to online sample videos or the gradient background.
+
+Suggested video content:
+- College campus scenes
+- Students at events
+- Graduation ceremonies
+- Sports events
+- Cultural activities
+- Academic activities
+- Campus life moments

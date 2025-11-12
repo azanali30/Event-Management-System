@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .logo-test {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px dashed #ddd;
+            text-align: center;
+        }
+        .logo-test img {
+            max-height: 100px;
+            width: auto;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Logo Display Test</h1>
+        
+        <div class="logo-test">
+            <h3>Test 1: assets/images/logo.png</h3>
+            <img src="assets/images/logo.png" alt="Logo from assets" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="error" style="display:none;">❌ Logo not found at assets/images/logo.png</div>
+        </div>
+        
+        <div class="logo-test">
+            <h3>Test 2: images/logo.png</h3>
+            <img src="images/logo.png" alt="Logo from images" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="error" style="display:none;">❌ Logo not found at images/logo.png</div>
+        </div>
+        
+        <div class="logo-test">
+            <h3>Test 3: Direct file check</h3>
+            <p>Check if files exist:</p>
+            <ul>
+                <li><a href="assets/images/logo.png" target="_blank">assets/images/logo.png</a></li>
+                <li><a href="images/logo.png" target="_blank">images/logo.png</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        // Check if images loaded successfully
+        window.addEventListener('load', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                if (img.complete && img.naturalHeight !== 0) {
+                    const successDiv = document.createElement('div');
+                    successDiv.className = 'success';
+                    successDiv.textContent = '✅ Logo loaded successfully!';
+                    img.parentNode.appendChild(successDiv);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
